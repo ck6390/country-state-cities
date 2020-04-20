@@ -51,7 +51,7 @@
 			    success: function(data){
 			    	var state_list = '';
 			    	state_list ="<option value=''>--Select State--</option>";
-			        for (var i = 0; i < data['states'].length-1; i++){
+			        for (var i = 0; i < data['states'].length; i++){
 			    		state_list += "<option value="+data['states'][i]['id']+">"+data['states'][i]['name']+"</option>";
 			    	}	
 			  		$('#state').html(state_list);		      
